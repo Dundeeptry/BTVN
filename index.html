@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đặt vé máy bay giá rẻ - Traveloka Skeleton</title>
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="logo">Traveloka</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#flights">Vé máy bay</a></li>
+          <li><a href="#hotels">Khách sạn</a></li>
+          <li><a href="#combos">Vé máy bay + Khách sạn</a></li>
+          <li><a href="#promos">Khuyến mãi</a></li>
+        </ul>
+      </nav>
+      <div class="auth-buttons">
+        <a href="#login" class="btn btn-secondary">Đăng nhập</a>
+        <a href="#register" class="btn btn-primary">Đăng ký</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero-flight-search" class="hero-section">
+      <h1>Đặt vé máy bay giá rẻ trực tuyến</h1>
+      <p>Tìm kiếm và so sánh giá vé từ hàng trăm hãng hàng không</p>
+      
+      <form class="flight-search-form">
+        <div class="form-options">
+          <label><input type="radio" name="trip-type" value="one-way" checked> Một chiều</label>
+          <label><input type="radio" name="trip-type" value="round-trip"> Khứ hồi</label>
+        </div>
+
+        <div class="form-inputs">
+          <div class="form-group">
+            <label for="origin">Điểm đi</label>
+            <input type="text" id="origin" placeholder="Thành phố hoặc sân bay đi">
+          </div>
+          <div class="form-group">
+            <label for="destination">Điểm đến</label>
+            <input type="text" id="destination" placeholder="Thành phố hoặc sân bay đến">
+          </div>
+          <div class="form-group">
+            <label for="departure-date">Ngày đi</label>
+            <input type="date" id="departure-date">
+          </div>
+          <div class="form-group">
+            <label for="passengers">Hành khách & Hạng ghế</label>
+            <input type="text" id="passengers" placeholder="1 Hành khách, Phổ thông">
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-search">Tìm chuyến bay</button>
+      </form>
+    </section>
+
+    <section id="promotions" class="promotions-section">
+      <h2>Khuyến mại vé máy bay hôm nay</h2>
+      <div class="promo-cards">
+        <article class="promo-card">
+          <h3>Giảm 15% vé nội địa</h3>
+          <p>Nhập mã: FLYDOM15</p>
+        </article>
+        <article class="promo-card">
+          <h3>Giảm 300.000đ vé quốc tế</h3>
+          <p>Áp dụng cho các chuyến bay đi Đông Nam Á</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="popular-routes" class="routes-section">
+      <h2>Các chặng bay phổ biến</h2>
+      <div class="route-grid">
+        <article class="route-card">
+          <h3>Hồ Chí Minh (SGN) → Hà Nội (HAN)</h3>
+          <p>Chỉ từ: 850.000 VND</p>
+          <a href="#booking" class="btn btn-outline">Xem chuyến bay</a>
+        </article>
+        <article class="route-card">
+          <h3>Hà Nội (HAN) → Đà Nẵng (DAD)</h3>
+          <p>Chỉ từ: 620.000 VND</p>
+          <a href="#booking" class="btn btn-outline">Xem chuyến bay</a>
+        </article>
+        <article class="route-card">
+          <h3>Hồ Chí Minh (SGN) → Phú Quốc (PQC)</h3>
+          <p>Chỉ từ: 590.000 VND</p>
+          <a href="#booking" class="btn btn-outline">Xem chuyến bay</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="airline-partners" class="partners-section">
+      <h2>Đối tác hàng không hàng đầu</h2>
+      <ul class="partner-logos">
+        <li>Vietnam Airlines</li>
+        <li>VietJet Air</li>
+        <li>Bamboo Airways</li>
+        <li>Vietravel Airlines</li>
+        <li>Singapore Airlines</li>
+      </ul>
+    </section>
+
+    <section id="features" class="features-section">
+      <h2>Tại sao nên đặt vé tại Traveloka?</h2>
+      <div class="feature-list">
+        <article class="feature-item">
+          <h3>Giá hiển thị minh bạch</h3>
+          <p>Giá cuối cùng đã bao gồm các loại thuế phí theo quy định.</p>
+        </article>
+        <article class="feature-item">
+          <h3>Đổi lịch & Hoàn vé linh hoạt</h3>
+          <p>Dễ dàng thao tác và quản trị đặt chỗ trực tuyến qua app.</p>
+        </article>
+        <article class="feature-item">
+          <h3>Thanh toán an toàn</h3>
+          <p>Hỗ trợ đa dạng phương thức thanh toán an toàn, bảo mật cao.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="download-app" class="app-banner-section">
+      <h2>Trải nghiệm đặt vé mượt mà hơn trên ứng dụng</h2>
+      <p>Quét mã QR để tải ứng dụng Traveloka và săn ưu đãi độc quyền.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>Về Traveloka</h4>
+        <ul>
+          <li><a href="#about">Cách đặt chỗ</a></li>
+          <li><a href="#contact">Liên hệ chúng tôi</a></li>
+          <li><a href="#help">Trung tâm trợ giúp</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Chính sách</h4>
+        <ul>
+          <li><a href="#privacy">Chính sách quyền riêng tư</a></li>
+          <li><a href="#terms">Điều khoản & Điều kiện</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Traveloka. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
