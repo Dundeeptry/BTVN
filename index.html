@@ -3,51 +3,159 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cà phê buổi sáng</title>
+  <title>Landing Page Sản Phẩm - Buổi 5</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <header>
-    <h1>Cà phê buổi sáng</h1>
-    <nav>
-      <ul>
-        <li><a class="active" href="#">Trang chủ</a></li>
-        <li><a href="#">Bài viết</a></li>
-        <li><a href="#">Liên hệ</a></li>
-      </ul>
-    </nav>
+<body id="top">
+  <header class="header">
+    <div class="container header-container">
+      <a href="#" class="logo">Shop<span>Zone</span></a>
+      <nav class="nav">
+        <a href="#hero" class="nav-link">Trang chủ</a>
+        <a href="#products" class="nav-link">Sản phẩm</a>
+        <a href="#about" class="nav-link">Giới thiệu</a>
+        <a href="#contact" class="nav-link">Liên hệ</a>
+      </nav>
+      <div class="header-action">
+        <button class="btn btn-primary" type="button">Giỏ hàng (0)</button>
+      </div>
+    </div>
   </header>
 
   <main>
-    <section class="hero">
-      <h2>Chào buổi sáng</h2>
-      <p>Một tách cà phê, một ngày mới.</p>
+    <section class="hero" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <span class="hero-tag">Bộ Sưu Tập Mới 2026</span>
+          <h1 class="hero-title">Đột Phá Công Nghệ & Phong Cách Sống</h1>
+          <p class="hero-desc">
+            Khám phá những thiết bị công nghệ hiện đại nhất với ưu đãi lên đến 40% trong tuần lễ mua sắm.
+          </p>
+          <div class="hero-actions">
+            <a href="#products" class="btn btn-sale">Khám phá ngay</a>
+            <a href="#about" class="btn btn-outline">Tìm hiểu thêm</a>
+          </div>
+        </div>
+        <div class="hero-image-wrap">
+          <img 
+            src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&q=80" 
+            alt="Tai nghe cao cấp" 
+            class="hero-img"
+          >
+        </div>
+      </div>
     </section>
+    <section class="products" id="products">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Sản Phẩm Nổi Bật</h2>
+          <p class="section-subtitle">Tối thiểu 6 sản phẩm chia thành 2 hàng, áp dụng kỹ thuật Relative - Absolute</p>
+        </div>
 
-    <section class="posts">
-      <h2>Bài viết mới</h2>
-      <article>
-        <h3>Pha cà phê phin</h3>
-        <p>Chậm rãi, đậm vị, đúng kiểu Việt Nam.</p>
-        <p>Nhỏ giọt từng chút một, không vội được.</p>
-      </article>
-      <article>
-        <h3>Cà phê trứng Hà Nội</h3>
-        <p>Béo, thơm, uống một lần là nhớ.</p>
-      </article>
+        <div class="product-grid">
+          <article class="product-card">
+            <button class="favorite-btn" type="button" aria-label="Yêu thích" title="Yêu thích">❤️</button>
+            <span class="sale-badge">Sale 30%</span>
+            <div class="product-thumb">
+              <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=600&q=80" alt="Đồng hồ thông minh Pro">
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Đồng hồ thông minh SmartWatch Pro</h3>
+              <div class="product-pricing">
+                <span class="price-current">1.890.000₫</span>
+                <span class="price-old">2.700.000₫</span>
+              </div>
+              <button class="btn btn-primary btn-block" type="button">Mua ngay</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <button class="favorite-btn" type="button" aria-label="Yêu thích" title="Yêu thích">❤️</button>
+            <span class="sale-badge">Sale 25%</span>
+            <div class="product-thumb">
+              <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=600&q=80" alt="Tai nghe chụp tai Wireless">
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Tai nghe chụp tai Hi-Fi Wireless</h3>
+              <div class="product-pricing">
+                <span class="price-current">1.490.000₫</span>
+                <span class="price-old">1.990.000₫</span>
+              </div>
+              <button class="btn btn-primary btn-block" type="button">Mua ngay</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <button class="favorite-btn" type="button" aria-label="Yêu thích" title="Yêu thích">❤️</button>
+            <span class="sale-badge">Sale 40%</span>
+            <div class="product-thumb">
+              <img src="https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?w=600&q=80" alt="Tai nghe Bluetooth True Wireless">
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Tai nghe Earbuds True Wireless ANC</h3>
+              <div class="product-pricing">
+                <span class="price-current">890.000₫</span>
+                <span class="price-old">1.490.000₫</span>
+              </div>
+              <button class="btn btn-primary btn-block" type="button">Mua ngay</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <button class="favorite-btn" type="button" aria-label="Yêu thích" title="Yêu thích">❤️</button>
+            <span class="sale-badge">Sale 15%</span>
+            <div class="product-thumb">
+              <img src="https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=600&q=80" alt="Chuột công thái học Ergonomic">
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Chuột công thái học Ergonomic Pro</h3>
+              <div class="product-pricing">
+                <span class="price-current">750.000₫</span>
+                <span class="price-old">890.000₫</span>
+              </div>
+              <button class="btn btn-primary btn-block" type="button">Mua ngay</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <button class="favorite-btn" type="button" aria-label="Yêu thích" title="Yêu thích">❤️</button>
+            <span class="sale-badge">Sale 35%</span>
+            <div class="product-thumb">
+              <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=600&q=80" alt="Bàn phím cơ Mechanical Keyboard">
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Bàn phím cơ RGB Custom Hot-swap</h3>
+              <div class="product-pricing">
+                <span class="price-current">1.625.000₫</span>
+                <span class="price-old">2.500.000₫</span>
+              </div>
+              <button class="btn btn-primary btn-block" type="button">Mua ngay</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <button class="favorite-btn" type="button" aria-label="Yêu thích" title="Yêu thích">❤️</button>
+            <span class="sale-badge">Sale 20%</span>
+            <div class="product-thumb">
+              <img src="https://images.unsplash.com/photo-1608156639585-b3a032ef9689?w=600&q=80" alt="Loa Bluetooth Mini Bass Boost">
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Loa Bluetooth Mini Chống Nước Bass Boost</h3>
+              <div class="product-pricing">
+                <span class="price-current">680.000₫</span>
+                <span class="price-old">850.000₫</span>
+              </div>
+              <button class="btn btn-primary btn-block" type="button">Mua ngay</button>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
-
-    <aside>
-      <h2>Ghi chú</h2>
-      <ul>
-        <li>Uống buổi sáng</li>
-        <li>Ít đường thôi</li>
-      </ul>
-    </aside>
   </main>
 
-  <footer>
-    <p>© 2026 Cà phê buổi sáng</p>
-  </footer>
+  <a href="#top" class="fixed-action-btn" aria-label="Lên đầu trang" title="Về đầu trang">
+    ↑
+  </a>
+
 </body>
 </html>
